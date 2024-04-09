@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv = "x-UA-Compatible" content = "IE = edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/cb1b3bc05d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="asset/my-logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick = "closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Bemnet</span> Ayalew <br> From Ethiopia</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ===== about ===== -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="asset/img-2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I have been really interested in this daily upgrading technology that is making changes in every aspects of our life from my childness,Specially, the digital world. Even if I hadn't a clear and enough understanding of it's broad concept until I got to university, I had a great enthusiasm toward the field. I got it more attractive when I joined software engineering and I have got initiated to know more. Now, I am doing with all what I have to be a well exprianced full stack developer and to come up with a competent product to the market.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('bio')">Bio</p>
+                        <p class="tab-links" onclick="opentab('experiance')">Expriance</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="bio">
+                        <ul>
+                            <li><span>Address <br> </span> Amanuel Town, Amhara Region, Ethiopia</li>
+                            <li><span>Date of Birth <br> </span> Feb 08 2002GC</li>
+                            <li><span>Place of Birth <br> </span> Attanbessa Kebele, Machakel Wereda</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiance">
+                        <ul>
+                            <li><span>UI/UX <br> </span> From Scratch!</li>
+                            <li><span>Web Development <br> </span> Midium level!</li>
+                            <li><span>App Development <br> </span> From Scratch!</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2009 - 2017 <br> </span> Attending my Primary school at D/Kelemo Full cycle primary school. I had been promoted to secondary school by getting 82, which was relatively a good result in the school, from the regional ministry exam at grade eight.</li>
+                            <li><span>2017 - 2021 <br> </span> Attending High Schhol at Amanuel secondary and preparatory school. I had got 4 at grade ten. And I could join BahirDar University by getting a good result in the national intrance exam at grade twelve.</li>
+                            <li><span>2022 - current <br> </span> I am now Studing Software Engineering at BahirDar University with a high diligence and honor. I take online courses side by side with my regular class whenever I get the oportunity inorder to make my self more competent in the field.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===== Sevices ===== -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1> 
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>If you are a businus man or have any type of organization that needs a well organized communication with it's customer, you got the right place. You can put your order of preference at the Message box down and I am here to serve you with a great honor. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>You have done all the interior part of your system and only left the main gate way to access the systems functionality, which is the interface of your system; That is my part to make the system realy functional and you only need to put your order at the Massage box below.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h2>App Design</h2>
+                    <p>I have designed many applications that are very user friendly, effecient and secured for different purposes untill now. And this is your turn to having an adorable application to make your services easy to be accessed. Give me specifications and detail information about the application in the message box right down here.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ====== portfolio ======-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="asset/web-app.png">
+                    <div class="layer">
+                        <h3>Web App</h3>
+                        <p>This is my first website that I built last year. It is a tour guide website that every one can access in every browser. And now I am ready to recieve and do your order in a more attractive way than this.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="asset/port-folio.png">
+                    <div class="layer">
+                        <h3>Personal Portfolio</h3>
+                        <p>This is my own portfolio that I made recently for my personal purpose. I build a profesional portfolio based on the data you give me, which can increas your competance in your field.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="asset/waiting.png">
+                    <div class="layer">
+                        <h3>Waiting Your order...</h3>
+                        <p>Any type of order that are in the above (my services) catagory could be done efficiently.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <a href="https://mail.google.com/getbemnet21@gmail.com" class="btn btn2">Send Email</a>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>+251926045509</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/gayalew"><i class="fa-brands fa-github"></i></i></a>
+                        <a href="https://t.me/haymanot_7"><i class="fa-brands fa-telegram"></i></i></a>
+                        <a href="https://tiktok.com/@bemne16"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder = "Your Name" required>
+                        <input type="imail" name="Email" placeholder = "Your email" required>
+                        <textarea name="Message"  rows="6" placeholder = "Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © BemnetA. 2024</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+
+           var sidemenu = document.getElementById("sidemenu");
+
+           function openmenu()
+           {
+            sidemenu.style.right = "0";
+           }
+           function closemenu()
+           {
+            sidemenu.style.right = "-200px";
+           }
+    </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwsl95Z-i_42E5fiI-kmdRzo2-57Uloh2fPHcbn8yWoHyNW7cOM0wb_vTHiAKsUg_H8/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Massage sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+  })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
